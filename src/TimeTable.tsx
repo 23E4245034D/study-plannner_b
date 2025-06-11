@@ -3,13 +3,13 @@ import React from "react";
 /**
  * Timetable event defined by weekday and period (1–6)
  */
-export type Day = "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat";
+export type Day    = "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat";
 export type Period = 1 | 2 | 3 | 4 | 5 | 6;
 
 export interface TimetableEvent {
-  day: Day;
+  day   : Day;
   period: Period;
-  title: string;
+  title : string;
 }
 
 const days: Day[] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -23,6 +23,7 @@ const dayLabels: Record<Day, string> = {
 };
 
 const periods: Period[] = [1, 2, 3, 4, 5, 6];
+
 
 interface TimeTableProps {
   /** 時間割データ */
